@@ -16,13 +16,40 @@
 }
 
 .transform_text textarea,
-input,
-label {
-  display: block;
+.input, .label {
   padding: 10px;
-  margin: 0 auto;
   border-radius: 10px;
   width: 60%;
+}
+
+textarea {
+    padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.radio {
+    /* padding: 10px; */
+  /* margin: 0 auto; */
+  /* border-radius: 10px; */
+}
+.submit {
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
 }
 
 .transform_text label {
