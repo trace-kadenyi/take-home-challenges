@@ -1,8 +1,14 @@
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TransformText from './Components/TransformText/TransformText';
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>React App</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TransformText />} />
+      </Routes>
+    </Router>
   );
 }
 
